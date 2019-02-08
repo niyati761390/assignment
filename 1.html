@@ -5,75 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel=stylesheet href="css/style1.css">
     <link rel=stylesheet href="external/css/bootstrap.css">
     <script src="external/js/bootstrap.js"></script>
 </head>
 <body>
     <div>
-            <nav class="navbar navbar-light bg-light">
-                <table border="solid black">
-                    <tr>
-                        <td>
-                                <a class="navbar-brand" href="#">
-                                        Grizzly
-                                      <img src="images/logo.png" width="70" height="50" class="d-inline-block align-top" alt="">
-                                      Store
-                                    </a>
-                        </td>
-                        <td>
-                                <input type="text" placeholder="Search..">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                        </td>
-                    </tr>
-                </table>
-                   
-            </nav>
-                  <table border="solid black" width="100%" style=" border-collapse: separate;
+                   <div style="background-color:#212529">
+   <table width="100%">
+     <tr>
+        <td width="23%"><a class="navbar-brand" href="#">
+    <font color= white>  Grizzy <font>
+    <img src="images/logo.png" width="" height="50" class="d-inline-block align-top" alt="">
+    <font color= white>  Store <font>
+  </a> </td>
+
+  <td> <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style=" border-radius: 4rem">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style=" border-radius: 4rem;">Search</button>
+  </form> </td>
+  <td align="middle">
+    <div>
+    <button type="button" class="btn btn-light" style="border-radius: 2rem;">   Login   </button>
+</div>
+    </td>
+     </tr>
+     </table>
+     </div>
+                
+                  <table width="100%" style=" border-collapse: separate;
                   border-spacing: 90px; ">
                       <tr>
-                          <td rowspan="2" width="20%" style="background-color: lightgray">
+                          <td rowspan="2" width="20%" height="550px" style="background-color: lightgray">
                               <div style="background-color:grey; top:500%;">
                                 <h3> Profile</h3> 
                                     </div>
                                     <br>
                                     <div>
-                                            <img src="images/crop.jpg" alt="Paris" align="center">
+                                            <img src="images/a1.png" alt="Profile" align="center">
                                     </div>
 
                                 <div>
                                     <table align="center">
-                                        <tr >
+                                        <tr>
                                           <td align="center">  
-                                            <h5>Niyati Khandelwal</h5></td>
+                                            <h5><font color="black">Name xyz</font></h5></td>
                                         </tr>
                                         <tr>
-                                                <td align="center">  <h5>ID</h5>
-                                                    <h6>761390</h6></td>
+                                                <td align="center">  <h5> <font color="black">ID</font></h5>
+                                                    <h6><font color="black">1234566</font></h6></td>
                                         </tr>
                                         <tr>
-                                                <td align="center">  <h5>Designation</h5>
-                                                    <h6>Admin</h6></td>
+                                                <td align="center">  <h5><font color="black">Designation</font></h5>
+                                                    <h6><font color="black">Admin</font></h6></td>
                                         </tr>
                                         <tr>
-                                                <td align="center">  <h5>Office</h5>
-                                                    <h6>NYC,NY USA</h6></td>
+                                                <td align="center">  <h5><font color="black">Office</font></h5>
+                                                    <h6><font color="black">NYC,NY USA</font></h6></td>
                                         </tr>
                                     </table>
                                 </div>
                           </td>
-                          <td colspan="2" height="9%">products</td>
-                          
-                      </tr>
-                      <tr>
-                          <td>
+                          <td colspan="2" height="9%">
+                            <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Products</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Vendor</button>
+ 
+</div>
 
-                          </td>
-                          <td>
+<div id="London" class="tabcontent">
+ <div class="container">
+     <table>
+         <tr>
+             <td width="70%"> <img src="images/1.jpg" class="mx-auto d-block" style="width:50%"> </td>
+             <td style="background-color: lightgray">
+                  <ul style="list-style-type:none;">
+                                  <li><font color="black">Enter Product ID</font></li>
+                                  <li>
+                                     <div class="dropdown">
+  <span><font color="black">Categories</font></span>
+  
+  <div class="dropdown-content">
+ <p><font color="black">Home</font></p>
+  <p><font color="black">Beauty</font></p>
+  <p><font color="black">Fashion</font></p>
+  </div>
+ 
+</div>                                     
+                                       </li>
+                                  <li><font color="black">Name</font></li>
+                                  <li><font color="black">Description</font></li>
+                                  <li><font color="black">Price</font></li>
+                                  </ul></td>
+             </tr>
+     </table>
+ 
+</div>
 
-                          </td>
-                      </tr>
-                  </table>
+ 
+</div>
+
+<div id="Paris" class="tabcontent">
+
+
+  <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Vendor Name</th>
+      <th scope="col">ID</th>
+      <th scope="col">Location</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">M/S Agarwal</th>
+      <td>MUM123</td>
+      <td>Mumbai</td>
+      <td>123456</td>
+    </tr>
+    <tr>
+      <th scope="row">M/S TechShop</th>
+      <td>DEL678</td>
+      <td>Delhi</td>
+      <td>123456</td>
+    </tr>
+    <tr>
+      <th scope="row">M/S eStore</th>
+      <td>LKO456</td>
+      <td>Lucknow</td>
+      <td>123456</td>
+    </tr>
+     <tr>
+      <th scope="row">M/S eKart</th>
+      <td>HYD367</td>
+      <td>Hyderabad</td>
+      <td>123456</td>
+    </tr>
+     <tr>
+      <th scope="row">M/S Apac</th>
+      <td>CHN365</td>
+      <td>Chennai</td>
+      <td>123456</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+  
+
                  
     </div>
 </body>
